@@ -55,6 +55,15 @@ The complete account is organized by the role of each argument.
 
 [Related work](references/RELATED_WORK.md) attributes the imported results and compares the construction with probabilistic QEC, secret sharing, recovery-probability bounds, and contextuality. Machine-readable citations are in [references.bib](references/references.bib).
 
+## Learn the project
+
+The educational anchor is **John Watrous, [The Theory of Quantum Information (2018)](https://cs.uwaterloo.ca/~watrous/TQI/)**. The learning route uses the parts needed for states, channels, measurements, and entanglement, then supplies the steps from those foundations to this construction.
+
+- **[Thirty-milestone map](learning/MILESTONES.md):** twelve background milestones build the exact-recovery framework; eighteen narrative milestones assemble the construction, prove the separation, and explain its physical meaning and limits. Each milestone gives a central question, an understanding target, dependencies, conceptual connections, and sources.
+- **[Watrous-to-project bridge](learning/WATROUS_BRIDGE.md):** selected sections, a notation dictionary, a worked recovery example, and the arguments needed beyond the textbook. The primary research dependencies for the benchmark and minimality remain explicit.
+
+The map is organized around the scientific argument. It provides a route into the project without requiring an entire textbook first. Readers checking the theorem can use the direct science route above.
+
 ## Reproduce the finite checks
 
 From the repository root, with Python 3.11 or later:

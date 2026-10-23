@@ -18,8 +18,8 @@ Let $`L\cong\mathbb C^K`$, with $`K>1`$, be the logical system. An encoder $`\ma
 
 ```math
 \begin{gathered}
-\mathcal R_S\circ\operatorname{Tr}_{S^c}\circ\mathcal E
-=q_S\operatorname{id}_L.
+\mathcal R_S\circ\mathrm{Tr}_{S^c}\circ\mathcal E
+=q_S\mathrm{id}_L.
 \end{gathered}
 \tag{1}
 ```
@@ -33,8 +33,8 @@ For a fixed finite-dimensional encoder, its optimal probability
 ```math
 p^*_{\mathcal E}(S)=
 \max_{\mathcal R_S}
-\left\{p:\mathcal R_S\circ\operatorname{Tr}_{S^c}\circ\mathcal E
-=p\operatorname{id}_L\right\}
+\left\{p:\mathcal R_S\circ\mathrm{Tr}_{S^c}\circ\mathcal E
+=p\mathrm{id}_L\right\}
 ```
 
 is monotone under inclusion: a larger subset can discard its extra carriers. The maximum is attained because the feasible decoder Choi operators form a compact set.
@@ -64,7 +64,7 @@ Let $`\mathcal B_{n,K}(\mathcal F)`$ denote the binary protocol profiles and def
 ```math
 \begin{gathered}
 \mathcal C_{n,K}(\mathcal F)
-=\operatorname{conv}\mathcal B_{n,K}(\mathcal F).
+=\mathrm{conv}\mathcal B_{n,K}(\mathcal F).
 \end{gathered}
 \tag{2}
 ```
@@ -75,9 +75,9 @@ Additional independent aborts do not enlarge (2). Given $`0\le q\le p\in\mathcal
 
 ## Why disjoint exact recoveries are exclusive
 
-Suppose $`S\cap T=\varnothing`$. Apply completed recovery instruments to these disjoint systems simultaneously, and let $`\mathcal J`$ be the completely positive map for both instruments succeeding. Its first logical marginal is a CP submap of $`q_S\operatorname{id}_L`$, and its second is a CP submap of $`q_T\operatorname{id}_L`$.
+Suppose $`S\cap T=\varnothing`$. Apply completed recovery instruments to these disjoint systems simultaneously, and let $`\mathcal J`$ be the completely positive map for both instruments succeeding. Its first logical marginal is a CP submap of $`q_S\mathrm{id}_L`$, and its second is a CP submap of $`q_T\mathrm{id}_L`$.
 
-The identity channel has a rank-one Choi operator. Every CP submap of a multiple of the identity is therefore itself a multiple of the identity. The two marginals of $`\mathcal J`$ must be $`c\operatorname{id}_L`$ with the same $`c\ge0`$, because their traces agree. If $`c>0`$, the channel $`\mathcal J/c`$ reproduces every input in both outputs. For pure inputs, both marginals are pure, so the joint output consists of two copies of the input. No-cloning excludes this for $`K>1`$. Hence $`\mathcal J=0`$.
+The identity channel has a rank-one Choi operator. Every CP submap of a multiple of the identity is therefore itself a multiple of the identity. The two marginals of $`\mathcal J`$ must be $`c\mathrm{id}_L`$ with the same $`c\ge0`$, because their traces agree. If $`c>0`$, the channel $`\mathcal J/c`$ reproduces every input in both outputs. For pure inputs, both marginals are pure, so the joint output consists of two copies of the input. No-cloning excludes this for $`K>1`$. Hence $`\mathcal J=0`$.
 
 Applying this reasoning to any pairwise disjoint family gives
 
@@ -103,12 +103,12 @@ Thus
 ```math
 \begin{gathered}
 \mathcal C_{n,K}(\mathcal F)
-=\operatorname{STAB}(G_{\mathcal F}),
+=\mathrm{STAB}(G_{\mathcal F}),
 \end{gathered}
 \tag{4}
 ```
 
-where $`\operatorname{STAB}(G)`$ is the convex hull of indicators of independent sets. This identification follows from established no-cloning and QSS realization results.
+where $`\mathrm{STAB}(G)`$ is the convex hull of indicators of independent sets. This identification follows from established no-cloning and QSS realization results.
 
 The use of QSS proves that all independent sets are attainable. It does not impose secrecy on every competing protocol: a code leaking information at an aborting query is still covered by the same bound.
 
@@ -169,18 +169,18 @@ This minimality counts carrier blocks. It does not establish minimal physical-qu
 
 ## Perfect query graphs: standard structural context
 
-Let $`\operatorname{QSTAB}(G)`$ be the polytope defined by nonnegativity and all clique inequalities. Equations (3) and (4) imply
+Let $`\mathrm{QSTAB}(G)`$ be the polytope defined by nonnegativity and all clique inequalities. Equations (3) and (4) imply
 
 ```math
 \begin{gathered}
-\operatorname{STAB}(G_{\mathcal F})
+\mathrm{STAB}(G_{\mathcal F})
 \subseteq\mathcal Q_{n,K}(\mathcal F)
-\subseteq\operatorname{QSTAB}(G_{\mathcal F}).
+\subseteq\mathrm{QSTAB}(G_{\mathcal F}).
 \end{gathered}
 \tag{8}
 ```
 
-The [standard perfect-graph polyhedral characterization](../references/RELATED_WORK.md#chvatal1975) gives $`\operatorname{STAB}(G)=\operatorname{QSTAB}(G)`$ for perfect graphs. Every operational profile on such a query family is consequently a deterministic-profile mixture. This is an immediate consequence of established results, not a new graph-theoretic claim.
+The [standard perfect-graph polyhedral characterization](../references/RELATED_WORK.md#chvatal1975) gives $`\mathrm{STAB}(G)=\mathrm{QSTAB}(G)`$ for perfect graphs. Every operational profile on such a query family is consequently a deterministic-profile mixture. This is an immediate consequence of established results, not a new graph-theoretic claim.
 
 The pentagon is the smallest imperfect graph. Its independent-set inequality allows a separation that clique constraints alone cannot exclude. This motivates the query family, but graph size alone does not prove carrier minimality: graph vertices are subsets rather than carriers. Equation (7) supplies that separate conclusion.
 
@@ -197,7 +197,7 @@ P_i=\sum_{\ell}K_{i,\ell}^{\dagger}K_{i,\ell}
 is a projector because the stacked decoder rows are orthonormal. Output corrections leave it unchanged. Disjoint queried pairs give commuting projectors. The joint-success argument above implies
 
 ```math
-\operatorname{Tr}\!\left[P_iP_j\mathcal E(\rho)\right]=0
+\mathrm{Tr}\!\left[P_iP_j\mathcal E(\rho)\right]=0
 \qquad(S_i\cap S_j=\varnothing)
 ```
 

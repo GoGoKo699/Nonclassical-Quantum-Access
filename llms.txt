@@ -14,9 +14,15 @@
 - [Related work](references/RELATED_WORK.md): prior results, attribution, neighboring tasks, and scope of the contribution.
 - [Bibliography](references/references.bib): structured scientific references.
 
+## Learning entry points
+
+- [Thirty-milestone map](learning/MILESTONES.md): the project-defined understanding map, M01-M30; twelve background/preliminaries milestones and eighteen narrative/innovation milestones, with local-to-global dependencies in each phase.
+- [Watrous-to-project bridge](learning/WATROUS_BRIDGE.md): the single educational anchor, John Watrous's The Theory of Quantum Information (2018); verified section pointers, notation and assumption translations, worked examples, and the steps supplied by the project.
+
 ## Routes by reader intention
 
 - Understand the story: README, model, interpretation, and related work.
+- Study the project: learning/MILESTONES.md, learning/WATROUS_BRIDGE.md, then the canonical science sections linked by each milestone. The map follows this project's argument, not the textbook's chapter order.
 - Check the theorem: model, construction, recovery, parameter family, and access profiles.
 - Understand why the flag helps: construction's branch maps and interpretation's arbitrary-decoder component lemma.
 - Check the comparison class and minimality: access profiles, then its linked primary sources.
@@ -37,3 +43,5 @@ Five-carrier minimality uses the attributed small-carrier classification. It doe
 The physical erasure distribution is correlated and retains one of five adjacent pairs. No independent-erasure amplification or positive unassisted-capacity conclusion follows.
 
 The exact number-field certificate and optional floating-point channel diagnostics have different evidential roles. Consult verification/README.md before interpreting a PASS report.
+
+Watrous supplies the educational foundations. The original construction, the imported QSS realizability theorem, and the imported small-carrier classification have distinct roles; preserve the attribution and proof boundaries in the bridge and related work.

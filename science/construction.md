@@ -214,7 +214,7 @@ Its reference marginal is
 ```math
 \begin{gathered}
 \rho_A=
-\operatorname{diag}\!\left(\frac4D,\frac{D-4}{D}\right).
+\mathrm{diag}\!\left(\frac4D,\frac{D-4}{D}\right).
 \end{gathered}
 \tag{13}
 ```
