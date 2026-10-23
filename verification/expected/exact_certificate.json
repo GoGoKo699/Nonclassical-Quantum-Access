@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "arithmetic": "Fractions in Q(u,v), u^2=-7, v^2=5/14; no tolerances",
+  "family_parameter_x": "1/8",
+  "physical_carriers": 5,
+  "dimension_per_carrier": 8,
+  "logical_dimension": 2,
+  "source_terms": {
+    "f": 20,
+    "g": 15
+  },
+  "source_norm_squared": "555/14",
+  "decoder_row_gram": "2 * I_4 for L=sqrt(2)K, exactly",
+  "encoder_gram": "I_2 after normalization, exactly",
+  "pair_channels": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "nonzero_effective_kraus": 8,
+      "success_probability": "224/555",
+      "logical_channel": "p * identity, exactly"
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "nonzero_effective_kraus": 8,
+      "success_probability": "224/555",
+      "logical_channel": "p * identity, exactly"
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "nonzero_effective_kraus": 8,
+      "success_probability": "224/555",
+      "logical_channel": "p * identity, exactly"
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "nonzero_effective_kraus": 8,
+      "success_probability": "224/555",
+      "logical_channel": "p * identity, exactly"
+    },
+    {
+      "pair": [
+        4,
+        0
+      ],
+      "nonzero_effective_kraus": 8,
+      "success_probability": "224/555",
+      "logical_channel": "p * identity, exactly"
+    }
+  ],
+  "joint_success_on_disjoint_pairs": "zero on both codewords, exactly",
+  "disjoint_pair_contexts": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "deterministic_binary_profiles": 11,
+  "deterministic_success_sum_max": 2,
+  "success_sum": "224/111",
+  "advantage_in_sum": "2/111",
+  "average_success": "224/555",
+  "advantage_in_average": "2/555",
+  "scope": "Exact finite construction and binary-profile enumeration; general minimality and family optimization use the written proofs and cited results."
+}
