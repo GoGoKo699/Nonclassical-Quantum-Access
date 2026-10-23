@@ -57,13 +57,13 @@ python -S verification/verify_family.py
 
 Expected result: top-level `"status": "PASS"`, exact parameter-identity checks, and `"floating_channel_diagnostics": {"enabled": false}`. The report identifies the arithmetic and the scope of the checked algebra.
 
-This mode checks the parameter formulas, amplitude-matching relations, normalization, strict-advantage condition, rational example, and the square-completion identity
+This mode checks the parameter formulas, normalization, strict-advantage condition, rational example, and the square-completion identity
 
 ```math
 D-(1+4\sqrt3)=\frac{(2(1-x)-\sqrt3)^2}{1-x}.
 ```
 
-The proof that these scalar identities imply exact recovery is the exhaustive source-state calculation in [Recovery](../science/recovery.md). The inequality and parameter-domain arguments are in [Parameter family](../science/parameter_family.md). The script does not replace those analytic steps or claim an unrestricted-code optimum.
+The amplitude-matching identities and the proof of exact recovery are established by the exhaustive source-state calculation in [Recovery](../science/recovery.md). The inequality and parameter-domain arguments are in [Parameter family](../science/parameter_family.md). The script does not replace those analytic steps or claim an unrestricted-code optimum.
 
 ## Optional numerical reconstruction
 

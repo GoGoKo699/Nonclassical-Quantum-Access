@@ -13,7 +13,7 @@ above the deterministic-mixture optimum $`2`$. The universal upper bound remains
 ## Direct recovery-profile precedent
 
 <a id="alhejji2026"></a>
-### Alhejji et al. — exact recovery after erasure
+### Alhejji et al.: exact recovery after erasure
 
 **M. A. Alhejji, N. Lordi, O. Baraskar, A. Shlosberg, and E. Knill, “Constraints on recovering quantum information after erasure,” arXiv:2607.17319v2 (2026).**
 
@@ -28,7 +28,7 @@ The present construction gives a strict lower bound beyond that deterministic hu
 ## Deterministic quantum secret-sharing structures
 
 <a id="gottesman2000"></a>
-### Gottesman — general access structures
+### Gottesman: general access structures
 
 **D. Gottesman, “Theory of quantum secret sharing,” Physical Review A 61, 042311 (2000), arXiv:quant-ph/9910067.**
 
@@ -39,7 +39,7 @@ Theorem 8 establishes realizability of monotone quantum access structures satisf
 The upper bound covers more than secret-sharing schemes. We impose exact retrieval on successful queries, without requiring secrecy on every other subset. A zero operational probability may be a deliberate abort; even zero *optimal* exact recovery probability does not imply no information leakage. For example, a proper subset of a repetition encoding retains logical basis populations while losing logical coherence.
 
 <a id="cleve1999"></a>
-### Cleve, Gottesman, and Lo — threshold constructions
+### Cleve, Gottesman, and Lo: threshold constructions
 
 **R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret,” Physical Review Letters 83, 648–651 (1999), arXiv:quant-ph/9901025.**
 
@@ -50,7 +50,7 @@ Threshold QSS constructions provide concrete realizations underlying the small-c
 ## Probabilistic correction
 
 <a id="kukulski2023"></a>
-### Kukulski, Pawela, and Puchała — probabilistic QEC
+### Kukulski, Pawela, and Puchała: probabilistic QEC
 
 **R. Kukulski, Ł. Pawela, and Z. Puchała, “On the probabilistic quantum error correction,” IEEE Transactions on Information Theory 69, 4620–4640 (2023), arXiv:2206.05232.**
 
@@ -65,7 +65,7 @@ The new encoder is itself an isometry. Its copied flag does not select ordinary 
 ## Independent and correlated erasures
 
 <a id="ahmed2026"></a>
-### Ahmed and Smith — distributed monogamy and channel simulation
+### Ahmed and Smith: distributed monogamy and channel simulation
 
 **R. G. Ahmed and G. Smith, “Distributed Monogamy of Entanglement limits Quantum Channel Simulation,” arXiv:2607.08591v2 (2026).**
 
@@ -83,7 +83,7 @@ The channel studied here instead uniformly retains one of five *adjacent* pairs.
 Thus an improvement on the chosen adjacent-pair family is compatible with the bound for all ten pairs and with independent-erasure nonamplification. The strict comparison is against all deterministic access mixtures for the same specified query distribution.
 
 <a id="cubitt2008"></a>
-### Cubitt, Ruskai, and Smith — anti-degradable channels
+### Cubitt, Ruskai, and Smith: anti-degradable channels
 
 **T. S. Cubitt, M. B. Ruskai, and G. Smith, “The structure of degradable quantum channels,” Journal of Mathematical Physics 49, 102104 (2008), arXiv:0802.1360.**
 
@@ -94,7 +94,7 @@ Anti-degradable channels have zero unassisted quantum capacity. The particular c
 ## Graphs and contextuality
 
 <a id="chvatal1975"></a>
-### Chvátal — the perfect-graph polyhedral characterization
+### Chvátal: the perfect-graph polyhedral characterization
 
 **V. Chvátal, “On certain polytopes associated with graphs,” Journal of Combinatorial Theory, Series B 18, 138–154 (1975).**
 
@@ -105,7 +105,7 @@ For a perfect graph, clique inequalities and nonnegativity describe its stable-s
 The pentagon is the smallest imperfect graph. This explains the obstruction at the level of queried subsets; it does not alone prove minimal carrier number, since graph vertices represent queries. The carrier-minimality claim uses Alhejji et al.'s separate classification. The polyhedral observation is attributed background, not a new theorem.
 
 <a id="cabello2014"></a>
-### Cabello, Severini, and Winter — the graph approach to contextuality
+### Cabello, Severini, and Winter: the graph approach to contextuality
 
 **A. Cabello, S. Severini, and A. Winter, “Graph-Theoretic Approach to Quantum Correlations,” Physical Review Letters 112, 040401 (2014), arXiv:1401.7081.**
 
@@ -118,7 +118,7 @@ An arbitrary orthogonal representation need not provide tensor-local decoders fo
 The success projectors also admit a secondary ideal compatible-measurement interpretation. Disjoint pairs give commuting tests with zero joint-success probability, while the sum of single-test probabilities exceeds two. This excludes a global distribution of predetermined outcomes reproducing all compatible contexts. The [precise statement](../science/access_profiles.md#secondary-interpretation-as-compatible-measurement-contextuality) includes the compatibility and common-observable assumptions. It is not a new contextuality inequality or a device-independent certification.
 
 <a id="klyachko2008"></a>
-### Klyachko et al. — the pentagon noncontextuality inequality
+### Klyachko et al.: the pentagon noncontextuality inequality
 
 **A. A. Klyachko, M. A. Can, S. Binicioğlu, and A. S. Shumovsky, “Simple Test for Hidden Variables in Spin-1 Systems,” Physical Review Letters 101, 020403 (2008), arXiv:0706.0126.**
 
@@ -129,13 +129,26 @@ The five-cycle inequality and quantum violation are established. Our rational co
 ## Neighboring entanglement-sharing work
 
 <a id="khanian2025"></a>
-### Khanian et al. — entanglement sharing
+### Khanian et al.: entanglement sharing
 
 **Z. Khanian, D. Lee, D. Leung, Z. Li, A. May, S. Miao, T. Mori, F. Salek, J. Yi, and B. Yoshida, “Entanglement sharing schemes,” arXiv:2509.21462 (2025), version 3 (2026).**
 
 [Manuscript](https://arxiv.org/html/2509.21462v3) · [arXiv record](https://arxiv.org/abs/2509.21462)
 
 This work studies deterministic EPR extraction between two variable groups, with known or unknown partner and constraints on unauthorized pairings. Its pentagon summoning obstruction concerns a communication-constrained unknown-partner task. Here the reference is fixed and inaccessible, a single requested subset applies a joint conclusive decoder, and the object is a vector of recovery probabilities. Definitions 17 and 24 in version 3 impose deterministic channel output, rather than the conclusive profile separation constructed here.
+
+## Educational anchor
+
+<a id="watrous2018"></a>
+### Watrous: mathematical foundations
+
+**J. Watrous, The Theory of Quantum Information, Cambridge University Press (2018).**
+
+[Author's book page and chapter manuscripts](https://cs.uwaterloo.ca/~watrous/TQI/)
+
+This is the repository's single educational anchor. Its finite-dimensional treatment of states, channels, measurements, and entanglement supplies the language for exact conclusive recovery. The [source-to-project bridge](../learning/WATROUS_BRIDGE.md) identifies the relevant sections, translates notation, and derives the additional steps needed here. The [thirty-milestone map](../learning/MILESTONES.md) organizes the project's scientific argument.
+
+The book is a foundation for understanding the construction. The exact access-profile separation is proved in this repository; the general QSS realizability theorem and the small-carrier classification remain separately attributed research dependencies above. The author's manuscript is linked at its source and is not redistributed here.
 
 ## Scope of the result
 
