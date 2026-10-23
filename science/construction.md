@@ -21,8 +21,10 @@ t=x+i\sqrt{1-x^2},\qquad
 ```
 
 ```math
+\begin{gathered}
 \gamma=\sqrt{1-\frac{|\beta_1|^2}{2}},\qquad
 D=4+|\beta_1|^2+|\beta_2|^2+\gamma^2.
+\end{gathered}
 \tag{1}
 ```
 
@@ -31,16 +33,20 @@ The nonnegative root defines $`\gamma`$. The conjugate choice of $`t`$ gives the
 The identities
 
 ```math
+\begin{gathered}
 t+t^{-1}=2x,\qquad
 |\beta_2|^2=\frac2{1-x},\qquad
 |\beta_1|^2=\frac{2(2x-1)^2}{1-x}
+\end{gathered}
 \tag{2}
 ```
 
 give
 
 ```math
+\begin{gathered}
 \gamma^2=\frac{x(3-4x)}{1-x}\ge0.
+\end{gathered}
 \tag{3}
 ```
 
@@ -59,9 +65,11 @@ The symbol $`v`$ denotes a distinguished defect level; the digits denote three b
 Define the unnormalized states
 
 ```math
+\begin{gathered}
 |f\rangle=
 \sum_{j=0}^4\sum_{k=1}^4
 t^{k-1}|v_j,0_{j+k},1_{\mathrm{rest}}\rangle
+\end{gathered}
 \tag{4}
 ```
 
@@ -83,17 +91,21 @@ There are twenty distinct words in $`f`$: five possible defect positions and fou
 The norms follow by summing squared amplitudes:
 
 ```math
+\begin{gathered}
 \langle f|f\rangle=20,\qquad
 \langle g|g\rangle
 =5\bigl(|\beta_1|^2+|\beta_2|^2+\gamma^2\bigr)
 =5(D-4).
+\end{gathered}
 \tag{6}
 ```
 
 Moreover,
 
 ```math
+\begin{gathered}
 \langle f|g\rangle=0,
+\end{gathered}
 \tag{7}
 ```
 
@@ -102,8 +114,10 @@ because every word of $`f`$ contains a defect and no word of $`g`$ does. At a bo
 Let $`P`$ shift each site to the next site. Relabeling $`j`$ in (4) and (5) shows
 
 ```math
+\begin{gathered}
 P|f\rangle=|f\rangle,\qquad
 P|g\rangle=|g\rangle.
+\end{gathered}
 \tag{8}
 ```
 
@@ -142,7 +156,9 @@ Each column has squared norm
 Their inner product vanishes by (7) and the orthogonality of $`F_0,F_1`$. Hence
 
 ```math
+\begin{gathered}
 V^\dagger V=I_2.
+\end{gathered}
 \tag{10}
 ```
 
@@ -160,19 +176,23 @@ W_0|1\rangle=|g\rangle.
 The two flag branches in (9) are
 
 ```math
+\begin{gathered}
 M_0=\frac{W_0}{\sqrt{5D}},\qquad
 M_1=\frac{W_0X}{\sqrt{5D}},
 \qquad
 M_0^\dagger M_0+M_1^\dagger M_1=I_2.
+\end{gathered}
 \tag{11}
 ```
 
 Neither branch is separately trace preserving. For an input $`\rho`$, the probability of flag zero after its measurement is
 
 ```math
+\begin{gathered}
 \Pr(0\mid\rho)
 =\frac4D\,\rho_{00}
 +\frac{D-4}{D}\,\rho_{11}.
+\end{gathered}
 \tag{12}
 ```
 
@@ -192,16 +212,20 @@ For completeness, introduce the normalized source
 Its reference marginal is
 
 ```math
+\begin{gathered}
 \rho_A=
 \operatorname{diag}\!\left(\frac4D,\frac{D-4}{D}\right).
+\end{gathered}
 \tag{13}
 ```
 
 This biased source is a convenient algebraic device. The normalized Choi vector of the physical encoder (9) is instead
 
 ```math
+\begin{gathered}
 |\Psi\rangle
 =\frac{|\psi\rangle F_0+X_A|\psi\rangle F_1}{\sqrt2}.
+\end{gathered}
 \tag{14}
 ```
 

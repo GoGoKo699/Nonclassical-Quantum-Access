@@ -3,7 +3,9 @@
 The [construction](construction.md) and [recovery proof](recovery.md) provide an explicit encoder-decoder pair for every $`0\le x\le3/4`$. Each adjacent pair has success probability
 
 ```math
+\begin{gathered}
 p(x)=\frac{16}{5D(x)},\qquad Q(x)=5p(x)=\frac{16}{D(x)}.
+\end{gathered}
 \tag{1}
 ```
 
@@ -26,7 +28,9 @@ D(x)
 Set $`y=1-x`$, so $`1/4\le y\le1`$. Then
 
 ```math
+\begin{gathered}
 D=1+4y+\frac3y.
+\end{gathered}
 \tag{3}
 ```
 
@@ -37,8 +41,10 @@ The two variable terms represent the normalization cost required to match all fo
 For $`y>0`$,
 
 ```math
+\begin{gathered}
 D-(1+4\sqrt3)
 =\frac{(2y-\sqrt3)^2}{y}\ge0.
+\end{gathered}
 \tag{4}
 ```
 
@@ -51,18 +57,22 @@ D_{\min}=1+4\sqrt3,
 ```
 
 ```math
+\begin{gathered}
 \boxed{
 p_{\mathrm{fam}}^{\max}
 =\frac{16}{5(1+4\sqrt3)}
 =0.403622347593226\ldots,
 }
+\end{gathered}
 \tag{5}
 ```
 
 ```math
+\begin{gathered}
 Q_{\mathrm{fam}}^{\max}
 =\frac{16}{1+4\sqrt3}
 =2.018111737966131\ldots.
+\end{gathered}
 \tag{6}
 ```
 
@@ -89,16 +99,20 @@ All of these are compatible with the normalized decoder rows. In particular, $`\
 Subtracting the deterministic-mixture normalization threshold gives
 
 ```math
+\begin{gathered}
 D(x)-8=\frac{x(4x-1)}{1-x}.
+\end{gathered}
 \tag{7}
 ```
 
 Since the denominator is positive, the displayed family obeys
 
 ```math
+\begin{gathered}
 Q(x)>2
 \quad\Longleftrightarrow\quad
 0<x<\frac14.
+\end{gathered}
 \tag{8}
 ```
 
@@ -119,10 +133,12 @@ t=\frac{1+3u}{8}.
 The coefficients simplify to
 
 ```math
+\begin{gathered}
 \beta_2=-\frac{35+9u}{28},\qquad
 \beta_1=-\frac34\beta_2
 =\frac{105+27u}{112},\qquad
 \gamma=\sqrt{\frac5{14}}.
+\end{gathered}
 \tag{9}
 ```
 
@@ -138,12 +154,14 @@ D=\frac{111}{14}.
 Therefore
 
 ```math
+\begin{gathered}
 \boxed{
 p=\frac{224}{555}
 =\frac25+\frac2{555},\qquad
 Q=\frac{224}{111}
 =2+\frac2{111}.
 }
+\end{gathered}
 \tag{10}
 ```
 
@@ -152,9 +170,11 @@ The success advantage in this example is a rational number. The amplitudes thems
 For the exact computational certificate, put $`v=\gamma`$ and work in
 
 ```math
+\begin{gathered}
 \mathbb Q(u,v),\qquad
 u^2=-7,\quad v^2=\frac5{14},\quad
 \overline u=-u,\quad \overline v=v.
+\end{gathered}
 \tag{11}
 ```
 

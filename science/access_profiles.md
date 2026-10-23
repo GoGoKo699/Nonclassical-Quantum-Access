@@ -17,8 +17,10 @@ Indices are modulo five. Every input-independent classical mixture of determinis
 Let $`L\cong\mathbb C^K`$, with $`K>1`$, be the logical system. An encoder $`\mathcal E`$ maps it into carriers $`B_0,\ldots,B_{n-1}`$. For a surviving subset $`S`$, an exact successful decoder is a completely positive trace-nonincreasing map satisfying
 
 ```math
+\begin{gathered}
 \mathcal R_S\circ\operatorname{Tr}_{S^c}\circ\mathcal E
 =q_S\operatorname{id}_L.
+\end{gathered}
 \tag{1}
 ```
 
@@ -60,8 +62,10 @@ is monotone. Every binary protocol implemented with that encoder is a coordinate
 Let $`\mathcal B_{n,K}(\mathcal F)`$ denote the binary protocol profiles and define
 
 ```math
+\begin{gathered}
 \mathcal C_{n,K}(\mathcal F)
 =\operatorname{conv}\mathcal B_{n,K}(\mathcal F).
+\end{gathered}
 \tag{2}
 ```
 
@@ -78,9 +82,11 @@ The identity channel has a rank-one Choi operator. Every CP submap of a multiple
 Applying this reasoning to any pairwise disjoint family gives
 
 ```math
+\begin{gathered}
 \sum_{S\in\mathcal K}q_S\le1
 \qquad
 \text{for every family }\mathcal K\text{ of pairwise disjoint queries.}
+\end{gathered}
 \tag{3}
 ```
 
@@ -95,8 +101,10 @@ A binary profile's successful subsets must be pairwise intersecting by (3), so t
 Thus
 
 ```math
+\begin{gathered}
 \mathcal C_{n,K}(\mathcal F)
 =\operatorname{STAB}(G_{\mathcal F}),
+\end{gathered}
 \tag{4}
 ```
 
@@ -117,8 +125,10 @@ the disjointness graph is a five-cycle in the order $`S_0,S_2,S_4,S_1,S_3`$. Thi
 At most two physical cycle edges can be pairwise intersecting. Once $`\{0,1\}`$ is included, the only other cycle edges meeting it are $`\{1,2\}`$ and $`\{4,0\}`$, which are disjoint from one another. Therefore
 
 ```math
+\begin{gathered}
 \boxed{\sum_{i=0}^{4}q_{S_i}\le2
 \quad\text{for every }q\in\mathcal C_{5,K}(\mathcal F).}
+\end{gathered}
 \tag{5}
 ```
 
@@ -127,7 +137,9 @@ The bound is sharp. Placing the whole logical system at one carrier allows deter
 The [explicit construction](construction.md) and [recovery identities](recovery.md) attain
 
 ```math
+\begin{gathered}
 q_{S_i}=\frac{16}{5(1+4\sqrt3)}.
+\end{gathered}
 \tag{6}
 ```
 
@@ -140,8 +152,10 @@ For uniformly random adjacent-pair survival, this means exact recovery with prob
 [Alhejji et al.](../references/RELATED_WORK.md#alhejji2026) characterize the full operational recovery-probability body for four or fewer carriers. Their constructive proof realizes its extreme profiles using binary access patterns, permutations, coordinatewise reductions, mixing, and unused carriers. Each operation preserves the deterministic-mixture body. It follows that
 
 ```math
+\begin{gathered}
 \mathcal Q_{n,K}=\mathcal C_{n,K}
 \qquad(n\le4,\ K>1),
+\end{gathered}
 \tag{7}
 ```
 
@@ -158,9 +172,11 @@ This minimality counts carrier blocks. It does not establish minimal physical-qu
 Let $`\operatorname{QSTAB}(G)`$ be the polytope defined by nonnegativity and all clique inequalities. Equations (3) and (4) imply
 
 ```math
+\begin{gathered}
 \operatorname{STAB}(G_{\mathcal F})
 \subseteq\mathcal Q_{n,K}(\mathcal F)
 \subseteq\operatorname{QSTAB}(G_{\mathcal F}).
+\end{gathered}
 \tag{8}
 ```
 

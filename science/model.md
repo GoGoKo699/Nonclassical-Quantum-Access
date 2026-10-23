@@ -22,7 +22,9 @@ For a surviving set $`S`$, the accessible channel is
 A successful recovery operation $`\mathcal R_S`$ is completely positive and trace-nonincreasing. Exact heralded recovery with probability $`q_S`$ means
 
 ```math
+\begin{gathered}
 \boxed{\mathcal R_S\circ\mathcal N_S=q_S\,\operatorname{id}_L.}
+\end{gathered}
 \tag{1}
 ```
 
@@ -61,10 +63,12 @@ Local decoder matrices use the ordered pairs $`(0,1),(1,2),(2,3),(3,4),(4,0)`$. 
 The physical channel chooses an adjacent pair uniformly, transmits that pair, and reports its label:
 
 ```math
+\begin{gathered}
 \mathcal N_{C_5}(\sigma)
 =\frac15\sum_{i=0}^4
 |i\rangle\langle i|_C\otimes
 \operatorname{Tr}_{S_i^c}\sigma.
+\end{gathered}
 \tag{2}
 ```
 
@@ -100,17 +104,21 @@ and a successful recovery operation on each adjacent pair such that
 where
 
 ```math
+\begin{gathered}
 \boxed{
 p_{\mathrm{code}}=\frac{16}{5(1+4\sqrt3)}
 =0.403622347593226\ldots .
 }
+\end{gathered}
 \tag{3}
 ```
 
 The same pair decoder is used after relabeling each ordered pair. In contrast, every classical mixture of binary exact-access profiles, with arbitrary finite carrier dimensions, obeys
 
 ```math
+\begin{gathered}
 Q\le2,\qquad \overline q\le\frac25.
+\end{gathered}
 \tag{4}
 ```
 
@@ -131,11 +139,13 @@ Minimality concerns the number of carrier blocks. It does not assert minimal phy
 The construction belongs to an explicit one-parameter family. At $`x=1/8`$, the pair success and total score are rational:
 
 ```math
+\begin{gathered}
 \boxed{
 q_i=\frac{224}{555}
 =\frac25+\frac2{555},\qquad
 Q=\frac{224}{111}=2+\frac2{111}.
 }
+\end{gathered}
 \tag{5}
 ```
 
@@ -155,11 +165,13 @@ The [exact verifier](../verification/verify_exact.py) contracts every effective 
 The result determines an attained lower bound, not the unrestricted optimum. The known universal pentagon inequality of [Alhejji et al.](../references/RELATED_WORK.md#alhejji2026) gives
 
 ```math
+\begin{gathered}
 \frac{16}{5(1+4\sqrt3)}
 \le
 \sup_{\mathcal E,\{\mathcal R_i\}}\overline q
 \le
 \frac1{\sqrt5}.
+\end{gathered}
 \tag{6}
 ```
 

@@ -20,10 +20,12 @@ K_0=\frac1{\sqrt2}\bigl[
 ```
 
 ```math
+\begin{gathered}
 K_1=\frac1{\sqrt2}\bigl[
 |0\rangle(\langle v1|+t\langle1v|)
 +|1\rangle(-t\langle01|+\langle10|)
 \bigr].
+\end{gathered}
 \tag{2}
 ```
 
@@ -82,7 +84,9 @@ There are two possible types of incorrect logical output. A zero output from $`g
 For an outside defect at $`j\in\{2,3,4\}`$, those two contributions are
 
 ```math
+\begin{gathered}
 \frac{-t\,t^{4-j}+t^{5-j}}{\sqrt2}=0.
+\end{gathered}
 \tag{4}
 ```
 
@@ -91,8 +95,10 @@ They have the same erased word and cancel coherently. The one-output row of $`K_
 Define the erased-system vectors
 
 ```math
+\begin{gathered}
 |E_0\rangle=|111\rangle,\qquad
 |E_1\rangle=t|011\rangle+t^2|101\rangle+t^3|110\rangle.
+\end{gathered}
 \tag{5}
 ```
 
@@ -116,8 +122,10 @@ Equation (6) is the central recovery relation. The erased system has the same st
 Group the two ququart inputs before their two flags for the following formula. For $`s\in\{0,1\}`$, define the successful physical Kraus operators
 
 ```math
+\begin{gathered}
 \widetilde K_{\ell,s}
 =(X^sK_\ell)\otimes\langle ss|.
+\end{gathered}
 \tag{7}
 ```
 
@@ -126,10 +134,12 @@ The pair reads equal flag values, applies $`K_\ell`$, and flips the recovered lo
 The success effect is
 
 ```math
+\begin{gathered}
 \widetilde P
 =P\otimes
 \bigl(|00\rangle\langle00|+|11\rangle\langle11|\bigr)
 \le I_{64}.
+\end{gathered}
 \tag{8}
 ```
 
@@ -146,30 +156,36 @@ completes the instrument when the failure flag is orthogonal to the successful l
 Write the unnormalized source map as $`W_0|0\rangle=f`$ and $`W_0|1\rangle=g`$. In the flag-$`s`$ branch of the encoder, the source map is $`W_0X^s/\sqrt{5D}`$. Equation (6) gives
 
 ```math
+\begin{gathered}
 (X^sK_\ell\otimes I)
 \frac{W_0X^s}{\sqrt{5D}}
 =\frac{\sqrt2}{\sqrt{5D}}\,
 I_2\otimes|E_\ell\rangle.
+\end{gathered}
 \tag{9}
 ```
 
 The remaining erased flags are orthogonal for the two values of $`s`$. Hence the complete effective logical Kraus operators are
 
 ```math
+\begin{gathered}
 \frac{\sqrt2}{\sqrt{5D}}I_2,\quad
 \frac{\sqrt2t}{\sqrt{5D}}I_2,\quad
 \frac{\sqrt2t^2}{\sqrt{5D}}I_2,\quad
 \frac{\sqrt2t^3}{\sqrt{5D}}I_2,
+\end{gathered}
 \tag{10}
 ```
 
 once for each flag value. There are eight nonzero effective Kraus operators. Summing their contributions proves
 
 ```math
+\begin{gathered}
 \boxed{
 \mathcal R_0\circ\operatorname{Tr}_{234}\circ\mathcal V
 =\frac{16}{5D}\operatorname{id}_2.
 }
+\end{gathered}
 \tag{11}
 ```
 
@@ -182,9 +198,11 @@ Both source states and both uniform flag strings are cyclically invariant. Relab
 The same matrices (1), (2), and (7) consequently satisfy
 
 ```math
+\begin{gathered}
 \mathcal R_i\circ\operatorname{Tr}_{S_i^c}\circ\mathcal V
 =\frac{16}{5D}\operatorname{id}_2,
 \qquad i=0,1,2,3,4.
+\end{gathered}
 \tag{12}
 ```
 
@@ -195,8 +213,10 @@ No pair-dependent logical rotation is required. The ordered wraparound conventio
 Extend each success projector (8) to all five carriers, calling it $`\Pi_i`$. If the queried pairs are disjoint, $`\Pi_i`$ and $`\Pi_j`$ commute. Exact universal recovery implies
 
 ```math
+\begin{gathered}
 \Pi_i\Pi_jV=0
 \qquad(S_i\cap S_j=\varnothing).
+\end{gathered}
 \tag{13}
 ```
 
