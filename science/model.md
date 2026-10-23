@@ -16,14 +16,14 @@ Let $`L\simeq\mathbb C^K`$ be the logical system, with $`K>1`$, and let $`B_0,\l
 For a surviving set $`S`$, the accessible channel is
 
 ```math
-\mathcal N_S=\operatorname{Tr}_{S^c}\circ\mathcal E.
+\mathcal N_S=\mathrm{Tr}_{S^c}\circ\mathcal E.
 ```
 
 A successful recovery operation $`\mathcal R_S`$ is completely positive and trace-nonincreasing. Exact heralded recovery with probability $`q_S`$ means
 
 ```math
 \begin{gathered}
-\boxed{\mathcal R_S\circ\mathcal N_S=q_S\,\operatorname{id}_L.}
+\boxed{\mathcal R_S\circ\mathcal N_S=q_S\,\mathrm{id}_L.}
 \end{gathered}
 \tag{1}
 ```
@@ -41,7 +41,7 @@ A recovery protocol may deliberately abort even when another decoder could succe
 ```math
 p_{\mathcal E}^{\max}(S)=
 \max_{\mathcal R_S}
-\left\{p:\mathcal R_S\circ\mathcal N_S=p\,\operatorname{id}_L\right\},
+\left\{p:\mathcal R_S\circ\mathcal N_S=p\,\mathrm{id}_L\right\},
 ```
 
 is monotone under inclusion of surviving sets. An assigned operational tuple $`q`$ need not be monotone, because its decoders may discard successful outcomes separately for different queries.
@@ -67,7 +67,7 @@ The physical channel chooses an adjacent pair uniformly, transmits that pair, an
 \mathcal N_{C_5}(\sigma)
 =\frac15\sum_{i=0}^4
 |i\rangle\langle i|_C\otimes
-\operatorname{Tr}_{S_i^c}\sigma.
+\mathrm{Tr}_{S_i^c}\sigma.
 \end{gathered}
 \tag{2}
 ```
@@ -95,8 +95,8 @@ V:\mathbb C^2\longrightarrow(\mathbb C^8)^{\otimes5}
 and a successful recovery operation on each adjacent pair such that
 
 ```math
-\mathcal R_i\circ\operatorname{Tr}_{S_i^c}\circ\mathcal V
-=p_{\mathrm{code}}\,\operatorname{id}_2,
+\mathcal R_i\circ\mathrm{Tr}_{S_i^c}\circ\mathcal V
+=p_{\mathrm{code}}\,\mathrm{id}_2,
 \qquad
 \mathcal V(\rho)=V\rho V^\dagger,
 ```

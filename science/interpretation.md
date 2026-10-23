@@ -55,7 +55,7 @@ Throughout the strict-advantage interval of the [parameter family](parameter_fam
 \frac{|0\rangle_A|f\rangle+|1\rangle_A|g\rangle}{\sqrt{5D}}
 ```
 
-has reference marginal $`\operatorname{diag}(4/D,(D-4)/D)`$. It is not by itself the Choi vector of a trace-preserving encoding of an arbitrary qubit.
+has reference marginal $`\mathrm{diag}(4/D,(D-4)/D)`$. It is not by itself the Choi vector of a trace-preserving encoding of an arbitrary qubit.
 
 Attach a flag qubit to every carrier and let $`F_s=|s\rangle^{\otimes5}`$. The isometric encoder is
 
@@ -99,8 +99,8 @@ The flag therefore labels a weak filtering branch whose probability depends on t
 This intermediate input dependence does **not** make the advertised recovery probability input dependent. Once the successful filter and conditional $`X`$ are included, each flag branch contributes $`8/(5D)`$ times the identity channel. Together they give
 
 ```math
-\mathcal R_i\circ\operatorname{tr}_{S_i^c}\circ\mathcal V
-=\frac{16}{5D}\operatorname{id}_2.
+\mathcal R_i\circ\mathrm{tr}_{S_i^c}\circ\mathcal V
+=\frac{16}{5D}\mathrm{id}_2.
 ```
 
 The coherent flag construction gives a pure isometric implementation. If mixed encoders are allowed, the two maps $`M_0,M_1`$ can instead be implemented as a quantum instrument with a copied outcome flag. Its input-dependent filtering still differs from an input-independent lottery over deterministic-access protocols.
@@ -127,7 +127,7 @@ For each adjacent pair, its optimal probability of exact conclusive identity rec
 A_{a,e}=R_a(I_S\otimes\langle e|)W.
 ```
 
-If the successful logical channel equals $`q\operatorname{id}_2`$, its Choi matrix has rank one. It is a sum of positive outer products of the vectorized $`A_{a,e}`$, so every effective Kraus operator must individually be proportional to $`I_2`$.
+If the successful logical channel equals $`q\mathrm{id}_2`$, its Choi matrix has rank one. It is a sum of positive outer products of the vectorized $`A_{a,e}`$, so every effective Kraus operator must individually be proportional to $`I_2`$.
 
 If the erased word $`e`$ contains a defect, the logical-one column of $`A_{a,e}`$ is zero: $`g`$ has no defect anywhere. A scalar identity with a zero column is zero. Hence every sector with the defect outside the surviving pair must be rejected exactly.
 
@@ -136,7 +136,7 @@ For the input $`|0\rangle`$, the defect in $`f/\sqrt{20}`$ lies inside a given p
 **Attainment.** Apply the same two-site filter as in the construction, then attenuate its logical-one output by
 
 ```math
-A=\operatorname{diag}\left(1,\sqrt{\frac{D-4}{4}}\right).
+A=\mathrm{diag}\left(1,\sqrt{\frac{D-4}{4}}\right).
 ```
 
 The stated parameter interval gives $`D<8`$, so this attenuation is contractive. It makes the two accepted logical amplitudes equal because
@@ -208,7 +208,7 @@ For uniform carrier dimension, define a channel that transmits a uniformly chose
 ```math
 \mathcal N_{C_5}(\sigma)
 =\frac15\sum_{i=0}^4|i\rangle\langle i|_C
-\otimes\operatorname{tr}_{S_i^c}\sigma.
+\otimes\mathrm{tr}_{S_i^c}\sigma.
 ```
 
 Each individual carrier survives with probability $`2/5`$, but the survival events are correlated. Composing this channel with the encoder and pair-conditioned recovery implements a logical erasure channel with transmission probability $`16/(5D)`$: on success the qubit is unchanged, and on failure its output may be replaced by an orthogonal erasure flag.

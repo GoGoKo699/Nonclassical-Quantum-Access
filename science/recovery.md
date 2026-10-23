@@ -147,7 +147,7 @@ It is a rank-eight projector. A failure map
 
 ```math
 \tau\longmapsto
-\operatorname{Tr}\bigl[(I_{64}-\widetilde P)\tau\bigr]\,
+\mathrm{Tr}\bigl[(I_{64}-\widetilde P)\tau\bigr]\,
 |\mathrm{fail}\rangle\langle\mathrm{fail}|
 ```
 
@@ -182,8 +182,8 @@ once for each flag value. There are eight nonzero effective Kraus operators. Sum
 ```math
 \begin{gathered}
 \boxed{
-\mathcal R_0\circ\operatorname{Tr}_{234}\circ\mathcal V
-=\frac{16}{5D}\operatorname{id}_2.
+\mathcal R_0\circ\mathrm{Tr}_{234}\circ\mathcal V
+=\frac{16}{5D}\mathrm{id}_2.
 }
 \end{gathered}
 \tag{11}
@@ -199,8 +199,8 @@ The same matrices (1), (2), and (7) consequently satisfy
 
 ```math
 \begin{gathered}
-\mathcal R_i\circ\operatorname{Tr}_{S_i^c}\circ\mathcal V
-=\frac{16}{5D}\operatorname{id}_2,
+\mathcal R_i\circ\mathrm{Tr}_{S_i^c}\circ\mathcal V
+=\frac{16}{5D}\mathrm{id}_2,
 \qquad i=0,1,2,3,4.
 \end{gathered}
 \tag{12}

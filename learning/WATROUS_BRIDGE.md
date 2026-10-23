@@ -5,8 +5,8 @@
 The central object is an equality of quantum operations:
 
 ```math
-\mathcal R_S\circ\operatorname{Tr}_{S^c}\circ\mathcal E
-=q_S\operatorname{id}_L.
+\mathcal R_S\circ\mathrm{Tr}_{S^c}\circ\mathcal E
+=q_S\mathrm{id}_L.
 ```
 
 An encoder distributes an unknown logical system among physical carriers. A specified subset survives. Its decoder either reports failure or returns the original quantum information exactly, with probability $`q_S`$. The purpose of this bridge is to derive what that equality requires and then connect it to the five-carrier construction.
@@ -47,7 +47,7 @@ All systems here are finite dimensional. Watrous writes vectors without Dirac no
 | $`\mathrm L(\mathcal X,\mathcal Y)`$ | Linear operators from $`\mathcal X`$ to $`\mathcal Y`$ |
 | $`\mathrm L(\mathcal X)`$ | The operator space also written $`\mathcal B(\mathcal X)`$ in [the model](../science/model.md) |
 | $`\mathbb 1_{\mathcal X}`$ | The identity operator $`I_{\mathcal X}`$ |
-| $`\mathbb 1_{\mathrm L(\mathcal X)}`$ | The identity **map** $`\operatorname{id}_{\mathcal X}`$ |
+| $`\mathbb 1_{\mathrm L(\mathcal X)}`$ | The identity **map** $`\mathrm{id}_{\mathcal X}`$ |
 | $`\mathrm C(\mathcal X,\mathcal Y)`$ | Completely positive, trace-preserving maps |
 
 The logical system is $`L\simeq\mathbb C^K`$. It is a Hilbert space, not the operator-space symbol $`\mathrm L(\mathcal X)`$. The explicit construction has $`K=2`$. Physical carriers are $`B_0,\ldots,B_4`$, and $`A`$ denotes an inaccessible reference.
@@ -74,18 +74,18 @@ For a map $`\Phi:\mathcal B(L)\to\mathcal B(Y)`$, the corresponding operator is
 
 ```math
 \omega_{AY}
-=(\operatorname{id}_A\otimes\Phi)
+=(\mathrm{id}_A\otimes\Phi)
 \bigl(|\Phi_K\rangle\langle\Phi_K|\bigr)
 =\frac1K\,\mathsf S J(\Phi)\mathsf S^\dagger,
 ```
 
 where $`\mathsf S`$ exchanges the two factors and identifies the input copy with $`A`$. Thus the two conventions differ by a factor $`K`$ and a permutation, not by a physical operation on the input.
 
-For a trace-preserving encoder, $`\operatorname{Tr}_Y\omega_{AY}=I_A/K`$. For a successful map $`q\operatorname{id}_L`$, one has
+For a trace-preserving encoder, $`\mathrm{Tr}_Y\omega_{AY}=I_A/K`$. For a successful map $`q\mathrm{id}_L`$, one has
 
 ```math
 \omega_{AL}=q|\Phi_K\rangle\langle\Phi_K|,
-\qquad \operatorname{Tr}\omega_{AL}=q.
+\qquad \mathrm{Tr}\omega_{AL}=q.
 ```
 
 This normalization matters: a normalized source vector with a biased reference marginal does not automatically describe a trace-preserving encoder. [Construction](../science/construction.md#reference-state-formulation) addresses exactly this issue.
@@ -112,11 +112,11 @@ E_{\mathrm{succ}}=\sum_aR_a^\dagger R_a.
 Then
 
 ```math
-\operatorname{Tr}\mathcal R(\sigma)
-=\operatorname{Tr}(E_{\mathrm{succ}}\sigma).
+\mathrm{Tr}\mathcal R(\sigma)
+=\mathrm{Tr}(E_{\mathrm{succ}}\sigma).
 ```
 
-This is no larger than $`\operatorname{Tr}\sigma`$ for every positive $`\sigma`$ exactly when $`E_{\mathrm{succ}}\le I`$. Necessity follows by testing an eigenvector with eigenvalue greater than one if such an eigenvector exists. Therefore:
+This is no larger than $`\mathrm{Tr}\sigma`$ for every positive $`\sigma`$ exactly when $`E_{\mathrm{succ}}\le I`$. Necessity follows by testing an eigenvector with eigenvalue greater than one if such an eigenvector exists. Therefore:
 
 ```math
 \begin{aligned}
@@ -132,7 +132,7 @@ The inequality is the condition for **trace nonincrease**. It permits a failure 
 ```math
 \widehat{\mathcal R}(\sigma)
 =\mathcal R(\sigma)\oplus
-\operatorname{Tr}\!\left[(I-E_{\mathrm{succ}})\sigma\right]
+\mathrm{Tr}\!\left[(I-E_{\mathrm{succ}})\sigma\right]
 |\mathrm{fail}\rangle\langle\mathrm{fail}|.
 ```
 
@@ -140,10 +140,10 @@ This is a trace-preserving channel. Keeping its outcome label gives the instrume
 
 ### The exactness condition includes coherences
 
-For $`\mathcal N_S=\operatorname{Tr}_{S^c}\circ\mathcal E`$, the successful logical map must obey
+For $`\mathcal N_S=\mathrm{Tr}_{S^c}\circ\mathcal E`$, the successful logical map must obey
 
 ```math
-\mathcal R_S\mathcal N_S=q_S\operatorname{id}_L
+\mathcal R_S\mathcal N_S=q_S\mathrm{id}_L
 ```
 
 on the full operator space. Correct action on computational basis states alone is insufficient. For instance, qubit dephasing fixes both $`|0\rangle\langle0|`$ and $`|1\rangle\langle1|`$ but sends $`|0\rangle\langle1|`$ to zero.
@@ -151,7 +151,7 @@ on the full operator space. Correct action on computational basis states alone i
 Tensoring the channel equality with an identity map proves the reference statement directly:
 
 ```math
-(\operatorname{id}_A\otimes\mathcal R_S\mathcal N_S)(\rho_{AL})
+(\mathrm{id}_A\otimes\mathcal R_S\mathcal N_S)(\rho_{AL})
 =q_S\rho_{AL}
 ```
 
@@ -171,7 +171,7 @@ The Choi representation gives a useful equivalence:
 
 ```math
 \sum_{a,e}A_{a,e}(\,\cdot\,)A_{a,e}^\dagger
-=q\operatorname{id}_L
+=q\mathrm{id}_L
 \quad\Longleftrightarrow\quad
 A_{a,e}=c_{a,e}I_L,\qquad
 \sum_{a,e}|c_{a,e}|^2=q.
@@ -181,15 +181,15 @@ Here is the missing necessity argument. The Choi operator on the left is
 
 ```math
 \sum_{a,e}
-|\operatorname{vec}(A_{a,e})\rangle
-\langle\operatorname{vec}(A_{a,e})|,
+|\mathrm{vec}(A_{a,e})\rangle
+\langle\mathrm{vec}(A_{a,e})|,
 ```
 
-whereas the right side has support only on $`\operatorname{vec}(I_L)`$. For a vector $`w`$ orthogonal to that support,
+whereas the right side has support only on $`\mathrm{vec}(I_L)`$. For a vector $`w`$ orthogonal to that support,
 
 ```math
 0=\sum_{a,e}
-\left|\langle w,\operatorname{vec}(A_{a,e})\rangle\right|^2.
+\left|\langle w,\mathrm{vec}(A_{a,e})\rangle\right|^2.
 ```
 
 Every nonnegative term vanishes. Each vectorized Kraus operator therefore lies in the same one-dimensional subspace. The converse follows by substitution. If $`q=0`$, all effective Kraus operators are zero.
@@ -276,7 +276,7 @@ The normalized vector
 =\frac{|0\rangle_Af+|1\rangle_Ag}{\sqrt{5D}}
 ```
 
-has reference marginal $`\operatorname{diag}(4/D,(D-4)/D)`$. The Choi normalization above requires $`I_A/2`$ for a qubit channel, so this vector alone is not the Choi vector of a trace-preserving encoder in that interval.
+has reference marginal $`\mathrm{diag}(4/D,(D-4)/D)`$. The Choi normalization above requires $`I_A/2`$ for a qubit channel, so this vector alone is not the Choi vector of a trace-preserving encoder in that interval.
 
 Let $`F_s=|s\rangle^{\otimes5}`$ and define
 
@@ -295,7 +295,7 @@ Write $`W_0|0\rangle=f`$, $`W_0|1\rangle=g`$. The two flag branches are $`M_0=W_
 Erasing a nonempty complement removes flag coherence because
 
 ```math
-\operatorname{Tr}_{S^c}
+\mathrm{Tr}_{S^c}
 \bigl(|0\rangle^{\otimes5}\langle1|^{\otimes5}\bigr)=0.
 ```
 
@@ -313,7 +313,7 @@ W|1\rangle=g/\sqrt{5(D-4)}
 
 has optimal pair success exactly $`2/5`$ for $`0<x<1/4`$. The [component lemma](../science/interpretation.md#component-lemma) supplies the full proof. Its key upper-bound step now follows immediately from the scalar-identity criterion: if an erased environment word contains a defect, its logical-one column is zero because $`g`$ contains no defect. A scalar identity with a zero column must vanish. Every successful decoder therefore rejects all sectors where the defect lies outside the pair. Only $`2/5`$ of the logical-zero input mass remains.
 
-The matching decoder applies the stated pair filter followed by $`\operatorname{diag}(1,\sqrt{(D-4)/4})`$. This is contractive for $`D<8`$ and gives four effective Kraus operators $`t^kI_2/\sqrt{10}`$, $`k=0,1,2,3`$, attaining $`2/5`$. This conclusion concerns these particular separately normalized source states, not all encoders without flags.
+The matching decoder applies the stated pair filter followed by $`\mathrm{diag}(1,\sqrt{(D-4)/4})`$. This is contractive for $`D<8`$ and gives four effective Kraus operators $`t^kI_2/\sqrt{10}`$, $`k=0,1,2,3`$, attaining $`2/5`$. This conclusion concerns these particular separately normalized source states, not all encoders without flags.
 
 <a id="reading-the-pentagon-recovery-proof"></a>
 ## Reading the pentagon recovery proof
@@ -363,9 +363,9 @@ A_{s,k}=\frac{\sqrt2\,t^k}{\sqrt{5D}}I_2,
 Since $`|t|=1`$, the scalar-identity criterion gives
 
 ```math
-\mathcal R_i\operatorname{Tr}_{S_i^c}\mathcal V
-=\left(8\frac2{5D}\right)\operatorname{id}_2
-=\frac{16}{5D}\operatorname{id}_2.
+\mathcal R_i\mathrm{Tr}_{S_i^c}\mathcal V
+=\left(8\frac2{5D}\right)\mathrm{id}_2
+=\frac{16}{5D}\mathrm{id}_2.
 ```
 
 Cyclic invariance supplies the same calculation for every ordered pair $`(i,i+1)`$, including $`(4,0)`$. The ordering matters because it specifies which tensor factor is the first input of $`K_\ell`$.
@@ -381,7 +381,7 @@ The restriction is on that branch's assigned recovery decisions, not on whether 
 
 ### The no-cloning step for arbitrary channels
 
-Suppose two disjoint subsets $`S,T`$ have successful operations with logical maps $`q_S\operatorname{id}`$ and $`q_T\operatorname{id}`$. Their completed instruments can be applied jointly. Let $`\mathcal J`$ denote the CP map for both succeeding.
+Suppose two disjoint subsets $`S,T`$ have successful operations with logical maps $`q_S\mathrm{id}`$ and $`q_T\mathrm{id}`$. Their completed instruments can be applied jointly. Let $`\mathcal J`$ denote the CP map for both succeeding.
 
 Each logical marginal of $`\mathcal J`$ is a CP submap of the corresponding single-success map. In Choi form, its positive operator is bounded above by a rank-one operator. The same support argument used earlier makes each marginal a scalar identity channel. The scalars agree because both marginal maps have the same trace. Write their common value as $`c`$.
 
