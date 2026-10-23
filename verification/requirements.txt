@@ -1,0 +1,4 @@
+# Optional: verify_family.py uses NumPy only with --numerical.
+# Exact parameter identities and verify_exact.py require only Python's standard library.
+# This is the version used for the reported full-channel diagnostics.
+numpy==2.3.5

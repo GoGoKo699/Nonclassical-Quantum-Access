@@ -1,0 +1,39 @@
+# Nonclassical Quantum Access
+
+> Exact heralded recovery profiles on five carriers can lie outside the convex hull of binary quantum-access protocols.
+
+## Scientific entry points
+
+- [README](README.md): question, principal results, connected reading route, and reproduction commands.
+- [Model and theorem](science/model.md): exact channel equality, erasure assumptions, probability body, five-pair task, and minimality statement.
+- [Construction](science/construction.md): canonical cyclic source amplitudes and the physical flagged isometry.
+- [Recovery](science/recovery.md): explicit Kraus operators, full-space contraction, exhaustive amplitude identities, and all five logical channels.
+- [Parameter family](science/parameter_family.md): allowed domain, advantage interval, rational example, and family-only optimum.
+- [Access profiles](science/access_profiles.md): arbitrary-code binary benchmark, disjointness graph, five-carrier minimality, and compatible-context corollary.
+- [Interpretation](science/interpretation.md): physical mechanism, flag weights, unflagged comparison lemma, resource accounting, and correlated-erasure channel.
+- [Related work](references/RELATED_WORK.md): prior results, attribution, neighboring tasks, and scope of the contribution.
+- [Bibliography](references/references.bib): structured scientific references.
+
+## Routes by reader intention
+
+- Understand the story: README, model, interpretation, and related work.
+- Check the theorem: model, construction, recovery, parameter family, and access profiles.
+- Understand why the flag helps: construction's branch maps and interpretation's arbitrary-decoder component lemma.
+- Check the comparison class and minimality: access profiles, then its linked primary sources.
+- Reproduce the result: verification/README.md, verify_exact.py, expected/exact_certificate.json, and verify_family.py.
+
+## Essential distinctions
+
+The logical input is an arbitrary qubit. There are five dimension-eight carriers, not five physical qubits. The same joint decoder acts on each ordered adjacent pair, including (4,0).
+
+Exact recovery means equality of completely positive maps with p times the identity channel. It preserves reference entanglement and has input-independent success. The encoding is a deterministic isometry; recovery is conclusive.
+
+The comparison is with input-independent mixtures of binary quantum-access protocols, including arbitrary entangled encoders and finite carrier dimensions. It is not restricted to routing codes. A zero operational probability may be a deliberate abort and is not a secrecy guarantee.
+
+The attained total score is 16/(1+4 sqrt(3)), above the sharp binary-mixture value 2. This is the optimum of the specified encoder-decoder family only. The unrestricted upper bound remains sqrt(5).
+
+Five-carrier minimality uses the attributed small-carrier classification. It does not imply a minimal local dimension or physical-qubit count.
+
+The physical erasure distribution is correlated and retains one of five adjacent pairs. No independent-erasure amplification or positive unassisted-capacity conclusion follows.
+
+The exact number-field certificate and optional floating-point channel diagnostics have different evidential roles. Consult verification/README.md before interpreting a PASS report.
